@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        PDFView pdfView=findViewById(R.id.pdfview);
-        pdfView.fromAsset("n.pdf")
+        PDFView pdfView =findViewById(R.id.pdfview);
+        pdfView.fromAsset("pdfexample.pdf")
                 .enableSwipe(true) // allows to block changing pages using swipe
                 .swipeHorizontal(true)
                 .enableDoubletap(true)
